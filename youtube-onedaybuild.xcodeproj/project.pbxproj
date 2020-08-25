@@ -16,6 +16,7 @@
 		49836FC024F30D8F008F6A70 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49836FBF24F30D8F008F6A70 /* Video.swift */; };
 		49836FC224F30E45008F6A70 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49836FC124F30E45008F6A70 /* Model.swift */; };
 		49836FC424F321A8008F6A70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49836FC324F321A8008F6A70 /* Constants.swift */; };
+		49DAD90C24F49655000283DD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAD90B24F49655000283DD /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		49836FBF24F30D8F008F6A70 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		49836FC124F30E45008F6A70 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		49836FC324F321A8008F6A70 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		49DAD90B24F49655000283DD /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +71,10 @@
 				49508F1C24F2C26600FC793C /* Assets.xcassets */,
 				49508F1E24F2C26600FC793C /* LaunchScreen.storyboard */,
 				49508F2124F2C26600FC793C /* Info.plist */,
+				49836FC324F321A8008F6A70 /* Constants.swift */,
 				49836FBF24F30D8F008F6A70 /* Video.swift */,
 				49836FC124F30E45008F6A70 /* Model.swift */,
-				49836FC324F321A8008F6A70 /* Constants.swift */,
+				49DAD90B24F49655000283DD /* Response.swift */,
 			);
 			path = "youtube-onedaybuild";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				49836FC224F30E45008F6A70 /* Model.swift in Sources */,
 				49836FC024F30D8F008F6A70 /* Video.swift in Sources */,
 				49836FC424F321A8008F6A70 /* Constants.swift in Sources */,
+				49DAD90C24F49655000283DD /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
