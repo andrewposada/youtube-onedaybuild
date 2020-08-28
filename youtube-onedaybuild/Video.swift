@@ -37,7 +37,7 @@ struct Video : Decodable {
     init (from decoder: Decoder) throws {
         
         //the decoder method .container throws so it needs to have a try
-        let container =   try decoder.container(keyedBy: CodingKeys.self)
+        let container = try decoder.container(keyedBy: CodingKeys.self)
         
         //getting snippet container from JSON object
         let snippetContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .snippet)

@@ -8,7 +8,14 @@
 
 import Foundation
 
+protocol ModelDelegate {
+    func videosFetched(_ videos:[Video])
+}
+
 class Model {
+    
+    // this is an optional because initially, nothing has set itself as a delegat
+    var delegate:ModelDelegate?
     
     func getVideos() {
         
@@ -34,6 +41,16 @@ class Model {
                 decoder.dateDecodingStrategy = .iso8601
                 
                 let response = try decoder.decode(Response.self, from: data!)
+                
+                if response.items != nil{
+                    
+                    DispatchQueue.main.async {
+                        // Call the "videosFetched" method of the delegate
+                        // items can be safely unwrapped because aa nil check was conducted
+                        self.delegate?.videosFetched(response.items!)
+                    }
+                    
+                }
                 
                 dump(response)
             }
